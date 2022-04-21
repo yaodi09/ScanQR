@@ -13,6 +13,10 @@
 		C5025E632809A9FE00722965 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5025E612809A9FE00722965 /* Main.storyboard */; };
 		C5025E652809AA0100722965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5025E642809AA0100722965 /* Assets.xcassets */; };
 		C5025E682809AA0100722965 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5025E662809AA0100722965 /* LaunchScreen.storyboard */; };
+		C5025E70280B04CE00722965 /* ScanQRVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5025E6F280B04CE00722965 /* ScanQRVC.swift */; };
+		C53702A9280BD9CA00B78EDA /* UserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53702A8280BD9CA00B78EDA /* UserListVC.swift */; };
+		C53702AB280BD9D300B78EDA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53702AA280BD9D300B78EDA /* UserModel.swift */; };
+		C53702AD280C011800B78EDA /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53702AC280C011800B78EDA /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		C5025E642809AA0100722965 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5025E672809AA0100722965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5025E692809AA0100722965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5025E6F280B04CE00722965 /* ScanQRVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRVC.swift; sourceTree = "<group>"; };
+		C53702A8280BD9CA00B78EDA /* UserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListVC.swift; sourceTree = "<group>"; };
+		C53702AA280BD9D300B78EDA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C53702AC280C011800B78EDA /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				C5025E642809AA0100722965 /* Assets.xcassets */,
 				C5025E662809AA0100722965 /* LaunchScreen.storyboard */,
 				C5025E692809AA0100722965 /* Info.plist */,
+				C5025E6F280B04CE00722965 /* ScanQRVC.swift */,
+				C53702A8280BD9CA00B78EDA /* UserListVC.swift */,
+				C53702AA280BD9D300B78EDA /* UserModel.swift */,
+				C53702AC280C011800B78EDA /* UserCell.swift */,
 			);
 			path = ScanQR;
 			sourceTree = "<group>";
@@ -140,7 +152,11 @@
 			files = (
 				C5025E602809A9FE00722965 /* ViewController.swift in Sources */,
 				C5025E5C2809A9FE00722965 /* AppDelegate.swift in Sources */,
+				C53702A9280BD9CA00B78EDA /* UserListVC.swift in Sources */,
+				C5025E70280B04CE00722965 /* ScanQRVC.swift in Sources */,
+				C53702AB280BD9D300B78EDA /* UserModel.swift in Sources */,
 				C5025E5E2809A9FE00722965 /* SceneDelegate.swift in Sources */,
+				C53702AD280C011800B78EDA /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,19 +305,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD94RTLT8Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScanQR/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to scan QR code";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ScanQR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DiYao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,19 +335,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JD94RTLT8Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ScanQR/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Use camera to scan QR code";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ScanQR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DiYao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

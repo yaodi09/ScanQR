@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ScanQR
 //
-//  Created by XiaorAx on 2022/4/15.
+//  Created by DD on 2022/3/15.
 //
 
 import UIKit
